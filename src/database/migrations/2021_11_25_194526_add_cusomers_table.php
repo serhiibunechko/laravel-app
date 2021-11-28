@@ -16,10 +16,9 @@ class AddCusomersTable extends Migration
         Schema::create('customers', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->integer('date_of_birth');
-            $table->text('comment');
+            $table->integer('age');
+            $table->integer('phone');
             $table->boolean('active')->default(0);
-            $table->boolean('no_active')->default(1);
             $table->timestamps();
         });
     }
