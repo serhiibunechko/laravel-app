@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Customer;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use function GuzzleHttp\Promise\all;
+use App\Models\Customer;
 
 class CustomerController extends Controller {
 
@@ -14,4 +15,6 @@ class CustomerController extends Controller {
 
         return view('customers', compact('customers'));
     }
+
+
 }

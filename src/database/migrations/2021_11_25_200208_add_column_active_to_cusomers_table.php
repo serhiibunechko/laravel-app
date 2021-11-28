@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddColumnActiveToCusomersTable extends Migration
+class AddColumnActiveToCustomersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class AddColumnActiveToCusomersTable extends Migration
      */
     public function up()
     {
-        Schema::table('cusomers', function (Blueprint $table) {
+        Schema::table('customers', function (Blueprint $table) {
             //
         });
     }
@@ -25,7 +25,7 @@ class AddColumnActiveToCusomersTable extends Migration
      */
     public function down()
     {
-        Schema::table('cusomers', function (Blueprint $table) {
+        Schema::table('customers', function (Blueprint $table) {
             //
         });
     }
