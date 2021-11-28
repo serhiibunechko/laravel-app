@@ -7,11 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Customer extends Model {
 
-    protected $appends = [
-        'name' => false,
-        'age' => false,
-        'phone' => false,
-        'active' => false,
-        ];
+    protected $table = 'customers';
 
 }
